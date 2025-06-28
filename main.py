@@ -150,6 +150,17 @@ class StylishPasswordApp(BoxLayout):
         )
         self.generate_btn.bind(on_press=self.animate_button)
         self.add_widget(self.generate_btn)
+        
+        
+        self.footer = Label(
+            text="© 2025 Atri Biswas. All rights reserved.",
+            font_size=12,
+            size_hint=(1, 0.1),
+            color=get_color_from_hex("#6c7086")
+        )
+        self.add_widget(self.footer)
+     
+
 
     def animate_button(self, instance):
         original_color = instance.background_color
